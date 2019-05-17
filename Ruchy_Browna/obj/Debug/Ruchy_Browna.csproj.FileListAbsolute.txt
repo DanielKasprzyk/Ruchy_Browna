@@ -1,0 +1,17 @@
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csprojAssemblyReference.cache
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\MainWindow.g.cs
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\App.g.cs
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna_MarkupCompile.cache
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna_MarkupCompile.lref
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\bin\Debug\Ruchy_Browna.exe.config
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\bin\Debug\Ruchy_Browna.exe
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\bin\Debug\Ruchy_Browna.pdb
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\Interop.Office.dll
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csproj.ResolveComReference.cache
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\MainWindow.baml
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.g.resources
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.Properties.Resources.resources
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csproj.GenerateResource.cache
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csproj.CoreCompileInputs.cache
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.exe
+D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.pdb
