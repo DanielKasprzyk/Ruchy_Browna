@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Office.Interop.Excel;
+﻿using Microsoft.Office.Interop.Excel;
 using _Excel = Microsoft.Office.Interop.Excel;
 
 namespace Ruchy_Browna
@@ -16,52 +11,46 @@ namespace Ruchy_Browna
         Worksheet ws;
         public Excel()
         {
-
         }
-        public Excel(string path, int sheet)
+        public Excel(string path, int sheet)        //  konstruktor klasy
         {
             this.path = path;
             wb = excel.Workbooks.Open(path);
             ws = wb.Worksheets[sheet];
         }
-
-        public void CreateNewFile()
+        public void CreateNewFile()     //  tworzenie nowego pliku
         {
-            this.wb = excel.Workbooks.Add(XlWBATemplate.xlWBATWorksheet);
+            wb = excel.Workbooks.Add(XlWBATemplate.xlWBATWorksheet);
+            ws = wb.Worksheets[1];
+            ws.Name = "Wykresy";
         }
-
-        public string ReadCell(int i, int j)
+        public void CreateNewsheet(string name, int sheet)      //  tworzenie nowego arkusza
         {
-            i++;
-            j++;
-            if (ws.Cells[i, j].Value2 != null)
-            {
-                return ws.Cells[i, j].Value2;
-            }
-            else return "";
+            Worksheet tempSheet = wb.Worksheets.Add(After: ws);
+            ws = wb.Worksheets[sheet];
+            ws.Name = name;
         }
-        public void WriteToCell(int i, int j, double d)
+        public void WriteToCell(long i, long j, double d)       //  metoda do wpisawania liczb
         {
             i++;
             j++;
             ws.Cells[i, j].Value2 = d;
         }
-        public void WriteToCell(int i, int j, string s)
+        public void WriteToCell(int i, int j, string s)     //  metoda do wpisywania ciągów znaków
         {
             i++;
             j++;
             ws.Cells[i, j].Value2 = s;
         }
-
-        public void Save()
+        public void Save()      //  metoda zapisująca plik
         {
             wb.Save();
         }
-        public void SaveAs(string path)
+        public void SaveAs(string path)     //  metoda zapisz jako
         {
             wb.SaveAs(path);
         }
-        public void Close()
+        public void Close()     //  metoda do zamykania pliku, bardzo ważna
         {
             wb.Close();
         }

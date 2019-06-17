@@ -1,18 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Threading;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.IO;
 
 namespace Ruchy_Browna
@@ -20,86 +8,114 @@ namespace Ruchy_Browna
     public partial class MainWindow : Window
     {
         static readonly string directoryPath = Environment.CurrentDirectory + @"\Output";
-        static readonly string output = directoryPath + @"\brown.xlsx";
+        static readonly string filePath = directoryPath + @"\brown.xlsx";
         public List<Point> points;
+        public int sheet;
         public MainWindow()
         {
             InitializeComponent();
             CreateDirectory();
-            
+            Createfile(filePath);
+            sheet = 1;
         }
-        public void Start(object sender, RoutedEventArgs e)
+        public void Start(object sender, RoutedEventArgs e)     //  funkcja głowna zajmująca się losowaniem liczb przy pomocy klasy RandomGen
         {
-            points = new List<Point>();
-            points.Add(new Point());
-            Random rnd = new Random();
-            double x = 0;
-            double y = 0;
-            double s, fi;
-            int i;
-            for (i = 0; i < int.Parse(n.Text); i++)
+            long N = long.Parse(n.Text);
+            points = new List<Point>(); //  lista punktów
+            points.Add(new Point());    //  punkt [0,0]
+            double x = points[0].X;     //  inicjalizujemy zmienne wartościami punktu startowego
+            double y = points[0].Y;
+            double s;                   //  s - długość wektora przesunięcia cząstki po n ruchach
+            double fi;                  //  fi - kąt z przedziału <0;2PI>
+            long on = 0;
+            CreateSheet(filePath, N.ToString());
+
+            for (long i = 0; i < N; i++)     //  pętla wykona się n razy
             {
-                fi = RandomGen.RNGGenerate();
-                x += Math.Cos(fi);
-                y += Math.Sin(fi);
-                if (roundCheckBox.IsChecked == true)
+                if (i % 10000 == 0 && i != 0)
                 {
-                    x = Round(x);
+                   on = i;
+                   SaveIntoFile(0, on);     //  zapisujemy wyniki do pliku
+                   points = new List<Point>();     //  dla optymalizacji tworzymy nową listę
+
+                }
+                fi = RandomGen.RNGGenerate();       //  przy użyciu klasy RandomGen generujemu kąt z zadanego przedziału
+                x += Math.Cos(fi);      //  ustawiamy nowy x na bazie poprzedniego i cosinusa konta fi
+                y += Math.Sin(fi);      //  ustawiamy nowy y na bazie poprzedniego i sinusa konta fi
+                if (roundCheckBox.IsChecked == true)        //  sprawdzamy czy zaokrąglać wyniki
+                {
+                    x = Round(x);       //  jeśli tak odpalamy naszą specjalną funkcję
                     y = Round(y);
-                }  
-                points.Add(new Point(x, y));
+                }
+                points.Add(new Point(x, y));        //  dodajemy do listy punktów
             }
-            RandomGen.RNGDispose();
-            s = Math.Sqrt(Math.Pow(points[points.Count-1].X, 2) + Math.Pow(points[points.Count - 1].Y, 2));
-            SaveIntoFile(s);
+            RandomGen.RNGDispose();     // po wykonanych obliczeniach czyścimy zmienne losowe z pamięci
+            s = Math.Sqrt(Math.Pow(points[points.Count-1].X, 2) + Math.Pow(points[points.Count - 1].Y, 2));     //  obliczamy długość wektora s
+            SaveIntoFile(s, on);        //  zapisujemy wyniki do pliku
             
         }
-        public void SaveIntoFile(double distance)
+        public void SaveIntoFile(double distance, long startOn)       //  funkcja zapisująca listę punktów do pliku przy użyciu klasy Excel
         {
-            Createfile(output);
-            Excel excel = new Excel(output, 1);
+            
+            Excel excel = new Excel(filePath, sheet);       // podajemy scieżke do pliku
             for (int i = 0; i < points.Count; i++)
             {
-                excel.WriteToCell(i, 1, points[i].X);
-                excel.WriteToCell(i, 2, points[i].Y);
-                x.Content = points[i].X;
-                y.Content = points[i].Y;
-
+                excel.WriteToCell(i + startOn, 1, points[i].X);   // wpisujemy do konkretnych komórek
+                excel.WriteToCell(i + startOn, 2, points[i].Y);
             }
-            distanceLabel.Content = distance;
             excel.WriteToCell(0, 0, "x:");
             excel.WriteToCell(0, 3, ":y");
             excel.WriteToCell(0, 4, "Cząsteczka przemiesciła się na odległość: ");
             excel.WriteToCell(0, 9, distance);
-            excel.Save();
-            excel.Close();
-            points = null;
+            excel.WriteToCell(0, 10, "od punktu (0,0).");
+            excel.WriteToCell(1, 4, "n:");
+            excel.WriteToCell(1, 5, n.Text);
+            x.Content = points[points.Count - 1].X;     //   wyswietlanie wartosci w aplikacji
+            y.Content = points[points.Count - 1].Y;
+            distanceLabel.Content = distance;
+            excel.Save();       //  zapisujemy
+            excel.Close();      //  zamykamy plik
+            points = null;      //  czyscimy liste
         }
-        public void Createfile(string path)
+
+        public void Createfile(string path)     //  funkcja tworząca plik
         {
-            if (!File.Exists(output))
+            if (!File.Exists(filePath))
             {
                 Excel ex = new Excel();
                 ex.CreateNewFile();
                 ex.SaveAs(path);
                 ex.Close();
+                sheet = 1;
             }
         }
-        public void CreateDirectory()
+        public void CreateSheet(string path, string name)     //  funkcja tworząca arkusz
+        {
+            bool done = false;
+            do
+            {
+                if (File.Exists(filePath))
+                {
+                    Excel ex = new Excel(filePath, sheet);
+                    sheet++;
+                    ex.CreateNewsheet(name, sheet);
+                    ex.Save();
+                    ex.Close();
+                    done = true;
+                }
+                else Createfile(path);
+            } while (!done);
+        }
+        public void CreateDirectory()       //  funkcja tworząca folder
         {
             if (!Directory.Exists(directoryPath))
             {
                 Directory.CreateDirectory(directoryPath);
             }
         }
-        public double Round(double value)
+        public double Round(double value)       //  funkcja do zaokrąglania wyniku
         {
             return Math.Round(value, int.Parse(placesAfterComa.Text), MidpointRounding.ToEven);
-        }
-
-        private void N_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

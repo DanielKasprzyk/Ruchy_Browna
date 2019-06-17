@@ -15,3 +15,54 @@ D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csproj.Gene
 D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csproj.CoreCompileInputs.cache
 D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.exe
 D:\MASTER\WorkSpace\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.pdb
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\bin\Debug\Ruchy_Browna.exe.config
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\bin\Debug\Ruchy_Browna.exe
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\bin\Debug\Ruchy_Browna.pdb
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csprojAssemblyReference.cache
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\obj\Debug\Interop.Office.dll
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csproj.ResolveComReference.cache
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\obj\Debug\MainWindow.g.cs
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\obj\Debug\App.g.cs
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna_MarkupCompile.cache
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna_MarkupCompile.lref
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\obj\Debug\MainWindow.baml
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.g.resources
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.Properties.Resources.resources
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csproj.GenerateResource.cache
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.exe
+C:\Users\Daniel\Desktop\Ćwiczenie 10 - materiały-20190411\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.pdb
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\bin\Debug\Ruchy_Browna.exe.config
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\bin\Debug\Ruchy_Browna.exe
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\bin\Debug\Ruchy_Browna.pdb
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csprojAssemblyReference.cache
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Interop.Office.dll
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csproj.ResolveComReference.cache
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\MainWindow.g.cs
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\App.g.cs
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna_MarkupCompile.cache
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna_MarkupCompile.lref
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\MainWindow.baml
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.g.resources
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.Properties.Resources.resources
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csproj.GenerateResource.cache
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.exe
+C:\Users\Daniel\Google Drive\Studia WSB\WSB Materiały Sem3\Fizyka\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.pdb
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\bin\Debug\Ruchy_Browna.exe.config
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\bin\Debug\Ruchy_Browna.exe
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\bin\Debug\Ruchy_Browna.pdb
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csprojAssemblyReference.cache
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Interop.Office.dll
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csproj.ResolveComReference.cache
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\MainWindow.g.cs
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\App.g.cs
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna_MarkupCompile.cache
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna_MarkupCompile.lref
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\MainWindow.baml
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.g.resources
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.Properties.Resources.resources
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csproj.GenerateResource.cache
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.exe
+C:\Users\Daniel\Desktop\Ćwiczenie 10 Daniel Kasprzyk\Ruchy_Browna\Ruchy_Browna\obj\Debug\Ruchy_Browna.pdb
