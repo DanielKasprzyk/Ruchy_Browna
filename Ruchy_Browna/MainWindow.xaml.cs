@@ -18,7 +18,8 @@ namespace Ruchy_Browna
             Createfile(filePath);
             sheet = 1;
         }
-        public void Start(object sender, RoutedEventArgs e)     //  funkcja głowna zajmująca się losowaniem liczb przy pomocy klasy RandomGen
+        public void Start(object sender, RoutedEventArgs e)
+        //  funkcja głowna zajmująca się losowaniem liczb przy pomocy klasy RandomGen
         {
             long N = long.Parse(n.Text);
             points = new List<Point>(); //  lista punktów
@@ -32,31 +33,28 @@ namespace Ruchy_Browna
 
             for (long i = 0; i < N; i++)     //  pętla wykona się n razy
             {
-                if (i % 10000 == 0 && i != 0)
+                if (i % 10000 == 0 && i != 0) //  co 10000 zmiennych wykonujemy zapis i zwalniamy pamięć
                 {
-                   on = i;
-                   SaveIntoFile(0, on);     //  zapisujemy wyniki do pliku
-                   points = new List<Point>();     //  dla optymalizacji tworzymy nową listę
-
+                    SaveIntoFile(0, on);     //  zapisujemy wyniki do pliku
+                    on = i;
+                    points = new List<Point>();     //  dla optymalizacji tworzymy nową listę
                 }
-                fi = RandomGen.RNGGenerate();       //  przy użyciu klasy RandomGen generujemu kąt z zadanego przedziału
+                fi = RandomGen.RNGGenerate();
+                //  przy użyciu klasy RandomGen generujemu kąt z zadanego przedziału
                 x += Math.Cos(fi);      //  ustawiamy nowy x na bazie poprzedniego i cosinusa konta fi
                 y += Math.Sin(fi);      //  ustawiamy nowy y na bazie poprzedniego i sinusa konta fi
-                if (roundCheckBox.IsChecked == true)        //  sprawdzamy czy zaokrąglać wyniki
-                {
-                    x = Round(x);       //  jeśli tak odpalamy naszą specjalną funkcję
-                    y = Round(y);
-                }
                 points.Add(new Point(x, y));        //  dodajemy do listy punktów
             }
             RandomGen.RNGDispose();     // po wykonanych obliczeniach czyścimy zmienne losowe z pamięci
-            s = Math.Sqrt(Math.Pow(points[points.Count-1].X, 2) + Math.Pow(points[points.Count - 1].Y, 2));     //  obliczamy długość wektora s
-            SaveIntoFile(s, on);        //  zapisujemy wyniki do pliku
-            
+            s = Math.Sqrt(Math.Pow(points[points.Count - 1].X, 2) + Math.Pow(points[points.Count - 1].Y, 2));
+            //  obliczamy długość wektora s
+            SaveIntoFile(s, on);        //  zapisujemy wyniki do pliku     
         }
-        public void SaveIntoFile(double distance, long startOn)       //  funkcja zapisująca listę punktów do pliku przy użyciu klasy Excel
+
+        public void SaveIntoFile(double distance, long startOn)
+        //  funkcja zapisująca listę punktów do pliku przy użyciu klasy Excel
         {
-            
+
             Excel excel = new Excel(filePath, sheet);       // podajemy scieżke do pliku
             for (int i = 0; i < points.Count; i++)
             {
@@ -77,7 +75,6 @@ namespace Ruchy_Browna
             excel.Close();      //  zamykamy plik
             points = null;      //  czyscimy liste
         }
-
         public void Createfile(string path)     //  funkcja tworząca plik
         {
             if (!File.Exists(filePath))
@@ -113,10 +110,5 @@ namespace Ruchy_Browna
                 Directory.CreateDirectory(directoryPath);
             }
         }
-        public double Round(double value)       //  funkcja do zaokrąglania wyniku
-        {
-            return Math.Round(value, int.Parse(placesAfterComa.Text), MidpointRounding.ToEven);
-        }
     }
 }
-

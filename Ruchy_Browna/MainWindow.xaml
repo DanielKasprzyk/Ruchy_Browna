@@ -5,19 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ruchy_Browna"
         mc:Ignorable="d"
-        Title="Metody Monte-Carlo i ich użycie do symulacji ruchów Browna" Height="457.636" Width="702.257" Background="#FF0BA294">
+        Title="Metody Monte-Carlo i ich użycie do symulacji ruchów Browna" Height="398.435" Width="730.448" Background="#FF0BA294">
     <Grid>
-        <TextBox  x:Name="n" HorizontalAlignment="Left" Height="44" Margin="220,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" HorizontalContentAlignment="Center" Text="" FontSize="18" FontWeight="Bold"/>
-        <Button Content="Start" HorizontalAlignment="Left" Margin="236,304,0,0" VerticalAlignment="Top" Width="216" Click="Start" Height="89" FontSize="48" FontWeight="Bold" Background="#FFFBCD00" BorderBrush="Black" Foreground="Black"/>
-        <Label Content="Ile chcesz ruchow?" HorizontalAlignment="Left" Margin="12,15,0,0" VerticalAlignment="Top" Width="179" Height="44" FontSize="18" FontWeight="Bold"/>
-        <Label Content="ostatni x: " HorizontalAlignment="Left" Margin="13,167,0,0" VerticalAlignment="Top" Width="165" HorizontalContentAlignment="Right" Height="63" FontSize="24" FontWeight="Bold"/>
-        <Label Content="ostatni y: " HorizontalAlignment="Left" Margin="13,242,0,0" VerticalAlignment="Top" Width="165" HorizontalContentAlignment="Right" Height="62" FontSize="24" FontWeight="Bold"/>
-        <Label x:Name="x" Content="0.0" HorizontalAlignment="Left" Margin="178,167,0,0" VerticalAlignment="Top" Width="274" Height="63" FontSize="24" FontWeight="Bold"/>
-        <Label x:Name="y" Content="0.0" HorizontalAlignment="Left" Margin="178,242,0,0" VerticalAlignment="Top" Width="274" Height="62" FontSize="24" FontWeight="Bold"/>
-        <CheckBox  x:Name="roundCheckBox" Content="Zaokrąglanie" HorizontalAlignment="Left" Margin="471,47,0,0" VerticalAlignment="Top" Width="216" HorizontalContentAlignment="Center" Height="58" FontSize="24" FontWeight="Bold"/>
-        <Label Content="Miejsca po przecinku:" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="191" Height="41" FontSize="18" FontWeight="Bold"/>
-        <TextBox  x:Name="placesAfterComa" HorizontalAlignment="Left" Height="41" Margin="220,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" HorizontalContentAlignment="Center" FontSize="18" FontWeight="Bold"/>
-        <Label Content="Cząsteczka przemiesciła się na odległość:" HorizontalAlignment="Left" Margin="12,124,0,0" VerticalAlignment="Top" Width="418" Height="38" FontSize="18" FontWeight="Bold"/>
-        <Label x:Name="distanceLabel" Content="0.0" HorizontalAlignment="Left" Margin="457,124,0,0" VerticalAlignment="Top" Width="216" Height="38" FontSize="18" FontWeight="Bold"/>
+        <TextBox  x:Name="n" HorizontalAlignment="Left" Height="44" Margin="219,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="464" HorizontalContentAlignment="Center" Text="" FontSize="18" FontWeight="Bold"/>
+        <Button Content="Start" HorizontalAlignment="Left" Margin="235,261,0,0" VerticalAlignment="Top" Width="216" Click="Start" Height="89" FontSize="48" FontWeight="Bold" Background="#FFFBCD00" BorderBrush="Black" Foreground="Black"/>
+        <Label Content="Ile chcesz ruchow?" HorizontalAlignment="Left" Margin="11,37,0,0" VerticalAlignment="Top" Width="179" Height="44" FontSize="18" FontWeight="Bold"/>
+        <Label Content="ostatni x: " HorizontalAlignment="Left" Margin="12,124,0,0" VerticalAlignment="Top" Width="165" HorizontalContentAlignment="Right" Height="63" FontSize="24" FontWeight="Bold"/>
+        <Label Content="ostatni y: " HorizontalAlignment="Left" Margin="12,199,0,0" VerticalAlignment="Top" Width="165" HorizontalContentAlignment="Right" Height="62" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="x" Content="0.0" HorizontalAlignment="Left" Margin="177,124,0,0" VerticalAlignment="Top" Width="274" Height="63" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="y" Content="0.0" HorizontalAlignment="Left" Margin="177,199,0,0" VerticalAlignment="Top" Width="274" Height="62" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Cząsteczka przemiesciła się na odległość:" HorizontalAlignment="Left" Margin="11,81,0,0" VerticalAlignment="Top" Width="418" Height="38" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="distanceLabel" Content="0.0" HorizontalAlignment="Left" Margin="456,81,0,0" VerticalAlignment="Top" Width="216" Height="38" FontSize="18" FontWeight="Bold"/>
     </Grid>
 </Window>

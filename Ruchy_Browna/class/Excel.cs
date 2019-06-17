@@ -1,6 +1,6 @@
 ﻿using Microsoft.Office.Interop.Excel;
 using _Excel = Microsoft.Office.Interop.Excel;
-
+// odpowiada za połączenie referencji do biblioteki excela
 namespace Ruchy_Browna
 {
     class Excel
@@ -30,6 +30,8 @@ namespace Ruchy_Browna
             ws = wb.Worksheets[sheet];
             ws.Name = name;
         }
+
+
         public void WriteToCell(long i, long j, double d)       //  metoda do wpisawania liczb
         {
             i++;
